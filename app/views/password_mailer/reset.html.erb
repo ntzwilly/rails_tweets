@@ -1,0 +1,9 @@
+<h1>Password#reset</h1>
+
+Hi <%= params[:user].email %>,
+
+Someone request to reset your password.
+
+If it was you, click the link below to reset your password. The link will expires in 15 minutes.
+
+<%= link_to "Reset password", password_reset_edit_url(token: @token) %>
